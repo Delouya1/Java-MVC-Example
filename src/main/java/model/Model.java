@@ -4,17 +4,18 @@ import java.util.Observable;
 import java.util.Random;
 
 public class Model extends Observable {
-    int res;
-    Random r = new Random();
 
-    public void calculate() {
-        res = r.nextInt(101);
-        setChanged();
-        notifyObservers();
+    public void setAileron(double x){
+
     }
+    public void setElevators(double x){
 
-    public int getRes() {
-        return res;
+    }
+    public void setRudder(double x){
+
+    }
+    public void setThrottle(double x){
+
     }
 }
 

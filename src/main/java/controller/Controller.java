@@ -19,11 +19,6 @@ public class Controller implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
-        if (o == this.m){
-            int res = m.getRes();
-            wc.display(res);
-        }else if (o == wc){
-            m.calculate();
-        }
+
     }
 }
