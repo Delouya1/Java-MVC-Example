@@ -38,17 +38,32 @@ public class Model extends Observable {
         }
     }
 
-    public void setAileron(double x){
+//    ip,127.0.0.1
+//    port,5402
+//    aileron,set /controls/flight/aileron
+//    elevator,set / controls/flight/elevator
+//    rudder,set /controls/flight/rudder
+//    throttle,set /controls/engines/current-engine/throttle
 
+    public void setAileron(double x){
+        String command = properties.get("aileron");
+        outToFG.println(command+" "+x);
+        outToFG.flush();
     }
     public void setElevators(double x){
-
+        String command = properties.get("elevator");
+        outToFG.println(command+" "+x);
+        outToFG.flush();
     }
     public void setRudder(double x){
-
+        String command = properties.get("rudder");
+        outToFG.println(command+" "+x);
+        outToFG.flush();
     }
     public void setThrottle(double x){
-
+        String command = properties.get("throttle");
+        outToFG.println(command+" "+x);
+        outToFG.flush();
     }
 
     public void close(){

@@ -4,5 +4,3 @@ aileron,set /controls/flight/aileron
 elevator,set / controls/flight/elevator
 rudder,set /controls/flight/rudder
 throttle,set /controls/engines/current-engine/throttle
-
-
